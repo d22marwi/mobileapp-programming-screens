@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view ) {
                 Intent intent = new Intent (MainActivity.this, MainActivity2.class);
+                intent.putExtra("name","marwi");
+                intent.putExtra("number", 22);
                 startActivity(intent);
                 Log.d("==>","we clicked on button");
             }
